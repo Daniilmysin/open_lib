@@ -8,8 +8,13 @@ from Handlers.debug import info
 from Handlers.user import add_book, add_author, other
 from models import db_act
 
-load_dotenv()
-Bot_token = str(os.getenv('bot'))
+try:
+    load_dotenv()
+    Bot_token = str(os.getenv('bot'))
+except Exception:
+    print(f".env file read error")
+    exit()
+
 bot = Bot(token=Bot_token)
 
 
@@ -23,6 +28,7 @@ async def main():
         await db_act.make_bd()
     except Exception as error:
         print(f"Ошибка создания базы данных: {error}")
+        exit()
     # Диспетчер
     dp = Dispatcher()
     dp.include_routers(add_book.rt, other.rt, info.rt, add_author.rt)

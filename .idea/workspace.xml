@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="fix bugs">
-      <change afterPath="$PROJECT_DIR$/bot/Handlers/user/add_author.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BookLib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BookLib.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/add_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/add_book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/db_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/db_act.py" afterDir="false" />
     </list>
@@ -41,8 +41,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Daniilmysin/webapp_kupi_blyat&quot;,
-    &quot;accountId&quot;: &quot;6b8d8099-be5e-42da-a155-43752aab7195&quot;
+    &quot;url&quot;: &quot;https://github.com/Daniilmysin/open_lib.git&quot;,
+    &quot;accountId&quot;: &quot;bf3b778c-1f34-4489-b37e-0b7ffe2ea148&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -64,16 +64,18 @@
     &quot;Python tests.Python tests in test_db.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_script.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.DBScripts.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
     &quot;Python.scripts.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;add__redis&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/apelsin/PycharmProjects/test&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -131,6 +133,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="BookLib" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="~PycharmProjects/open_lib/venv/bin/python" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,6 +223,14 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.Main" />
+      <item itemvalue="Python.DBScripts" />
+      <item itemvalue="Python tests.Python tests for test_db.SimpleUnitTest" />
+      <item itemvalue="Python tests.Python tests for test_db.SimpleUnitTest.test_author_act" />
+      <item itemvalue="Python tests.Python tests for test_script.MyTestCase" />
+      <item itemvalue="Python tests.Python tests in test_script.py" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests in test_script.py" />
@@ -212,7 +244,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
       </set>
     </attachedChunks>
   </component>
@@ -459,13 +491,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/bot/Handlers/user/add_author.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

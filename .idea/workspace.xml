@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="fix bugs and error processing">
+    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="bruh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Start.py" beforeDir="false" afterPath="$PROJECT_DIR$/Start.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +63,7 @@
     &quot;Python tests.Python tests in test_script.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.DBScripts.executor&quot;: &quot;Run&quot;,
     &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Start.executor&quot;: &quot;Run&quot;,
     &quot;Python.scripts.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -460,7 +462,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749636263439</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="someshit">
+      <option name="closed" value="true" />
+      <created>1749657785821</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1749657785821</updated>
+    </task>
+    <task id="LOCAL-00027" summary="bruh">
+      <option name="closed" value="true" />
+      <created>1749657804852</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1749657804852</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +511,9 @@
     <MESSAGE value="добавил модели и повысил читабельность кода" />
     <MESSAGE value="fix bugs" />
     <MESSAGE value="fix bugs and error processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs and error processing" />
+    <MESSAGE value="someshit" />
+    <MESSAGE value="bruh" />
+    <option name="LAST_COMMIT_MESSAGE" value="bruh" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

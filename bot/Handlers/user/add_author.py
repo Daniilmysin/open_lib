@@ -55,7 +55,7 @@ async def add_description(message: Message, state: FSMContext):
 async def add_photo(message: Message, state: FSMContext):
     author = await RedisManager().get_data(message.from_user.id)
     photo = message.photo.index
-    file_info = await message.bot.get_file(photo)
+    file_info = await message.bot.get_file()
     downloaded_file = await message.bot.download_file(file_info.file_path)
     name_photo = await transliterate(author['name']) + '_' + str(secrets.token_hex(16)) + '.jpg'
     destination = os.path.join(folder, 'photo', name_photo)

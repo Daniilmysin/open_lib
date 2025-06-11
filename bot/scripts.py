@@ -1,4 +1,3 @@
-import asyncio
 async def transliterate(text):
     # Словарь с соответствиями русских букв и латиницы
     translit_dict = {

@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="fix bugs">
-      <change beforePath="$PROJECT_DIR$/.idea/BookLib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BookLib.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="fix bugs and error processing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/db_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/db_act.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -455,7 +452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725195339979</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fix bugs and error processing">
+      <option name="closed" value="true" />
+      <created>1749636263439</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1749636263439</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +492,8 @@
     <MESSAGE value="upload redis and SQL" />
     <MESSAGE value="добавил модели и повысил читабельность кода" />
     <MESSAGE value="fix bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+    <MESSAGE value="fix bugs and error processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs and error processing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

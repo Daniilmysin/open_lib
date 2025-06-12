@@ -1,3 +1,4 @@
+import logging
 import os
 import secrets
 from aiogram import Router, F, types
@@ -9,7 +10,7 @@ from models import AddAuthor, RedisManager
 from bot.scripts import transliterate
 
 rt = Router()
-folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..','photo'))
 
 
 class AddAuthorState(StatesGroup):
@@ -54,15 +55,17 @@ async def add_description(message: Message, state: FSMContext):
 @rt.message(F.photo, AddAuthorState.add_photo)
 async def add_photo(message: Message, state: FSMContext):
     author = await RedisManager().get_data(message.from_user.id)
-    photo = message.photo.index
-    file_info = await message.bot.get_file()
-    downloaded_file = await message.bot.download_file(file_info.file_path)
+    file = await message.bot.get_file(message.photo[-1].file_id)
+    file_path = file.file_path
     name_photo = await transliterate(author['name']) + '_' + str(secrets.token_hex(16)) + '.jpg'
-    destination = os.path.join(folder, 'photo', name_photo)
     try:
-        with open(destination, 'wb') as f:
-            f.write(downloaded_file.read())
+        await message.bot.download_file(file_path, folder + '/' + name_photo)
     except Exception as error:
-        print("нихуя не работает." + str(error))
+
+        logging.error("нихуя не работает." + str(error))
+        await message.answer('ошибка, попробуйте позже')
+        return None
+    await RedisManager().set_data(message.from_user.id, name_photo)
+    await AddAuthor().end(message.from_user.id)
     await message.reply("Фото успешно загружено и сохранено!")
     await state.set_state(AddAuthorState.end)

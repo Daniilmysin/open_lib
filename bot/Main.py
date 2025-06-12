@@ -18,7 +18,6 @@ async def main():
         bot_token = str(os.getenv('bot'))
         if bot_token is None:
             exit(logging.debug('Bot token does not exist'))
-
     except Exception as error_message:
         exit(logging.error(error_message))
 

@@ -44,7 +44,7 @@ async def add_description(message: Message, state: FSMContext):
     status = await AddAuthor().add_data(message.from_user.id, message.text, 'description' )
     if status is False:
         await message.answer('Ошибка, попробуйте ещё раз')
-        print(f'------Ошибка добавления описание автора, возможно проблемы с redis. Айди: {message.from_user.id},'
+        logging.error(f'------Ошибка добавления описание автора, возможно проблемы с redis. Айди: {message.from_user.id},'
               f' имя автора: {message.text}------')
         await state.set_state(AddAuthorState.add_description)
     elif status is True:
@@ -61,11 +61,10 @@ async def add_photo(message: Message, state: FSMContext):
     try:
         await message.bot.download_file(file_path, folder + '/' + name_photo)
     except Exception as error:
-
         logging.error("нихуя не работает." + str(error))
         await message.answer('ошибка, попробуйте позже')
         return None
-    await RedisManager().set_data(message.from_user.id, name_photo)
+    await AddAuthor().add_data(message.from_user.id, name_photo, 'photo' )
     await AddAuthor().end(message.from_user.id)
     await message.reply("Фото успешно загружено и сохранено!")
     await state.set_state(AddAuthorState.end)

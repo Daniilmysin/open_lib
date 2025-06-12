@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="bruh">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="photo bruh">
       <change beforePath="$PROJECT_DIR$/bot/Handlers/user/add_author.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/add_author.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -510,7 +508,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749670225080</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="photo bruh">
+      <option name="closed" value="true" />
+      <created>1749729120213</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1749729120213</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +553,8 @@
     <MESSAGE value="start script is work!" />
     <MESSAGE value="fixed some shit" />
     <MESSAGE value="bruh" />
-    <option name="LAST_COMMIT_MESSAGE" value="bruh" />
+    <MESSAGE value="photo bruh" />
+    <option name="LAST_COMMIT_MESSAGE" value="photo bruh" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

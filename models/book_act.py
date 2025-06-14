@@ -41,3 +41,8 @@ class BookAdd(RedisManager):
                 return False
         await self.del_data(id_user)
         return True
+
+
+async def find_book(query):
+    async with (AsyncSession(engine) as session):
+        await session.execute(select())

@@ -84,7 +84,7 @@ class RedisManager:
     async def del_data(self, key):
         async with self.redis as r:
             try:
-                data = await r.delete(key)
+                await r.delete(key)
                 await r.aclose()
             except Exception as e:
                 # Обработка ошибки

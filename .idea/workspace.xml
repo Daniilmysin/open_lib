@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="photo bruh">
-      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/add_author.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/add_author.py" afterDir="false" />
+    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="eee">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/find_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/find_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/other.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/other.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/author_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/author_act.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/book_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/book_act.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/db_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/db_act.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,41 +55,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_db.SimpleUnitTest.executor": "Run",
-    "Python tests.Python tests for test_db.SimpleUnitTest.test_author_act.executor": "Run",
-    "Python tests.Python tests for test_db.SimpleUnitTest.test_book_act.executor": "Run",
-    "Python tests.Python tests for test_db.SimpleUnitTest.test_user_act.executor": "Run",
-    "Python tests.Python tests for test_script.MyTestCase.executor": "Run",
-    "Python tests.Python tests in test_db.py.executor": "Run",
-    "Python tests.Python tests in test_script.py.executor": "Run",
-    "Python.DBScripts.executor": "Run",
-    "Python.Main.executor": "Debug",
-    "Python.Start.executor": "Run",
-    "Python.scripts.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/apelsin/PycharmProjects/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_db.SimpleUnitTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_db.SimpleUnitTest.test_author_act.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_db.SimpleUnitTest.test_book_act.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_db.SimpleUnitTest.test_user_act.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_script.MyTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_db.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_script.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DBScripts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Start.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scripts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/apelsin/PycharmProjects/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;
     ],
-    "DatabaseDriversLRU": [
-      "postgresql"
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bot" />
@@ -516,7 +521,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749729120213</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="eee">
+      <option name="closed" value="true" />
+      <created>1749729690788</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1749729690788</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,17 +567,11 @@
     <MESSAGE value="fixed some shit" />
     <MESSAGE value="bruh" />
     <MESSAGE value="photo bruh" />
-    <option name="LAST_COMMIT_MESSAGE" value="photo bruh" />
+    <MESSAGE value="eee" />
+    <option name="LAST_COMMIT_MESSAGE" value="eee" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/author_act.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

@@ -17,9 +17,8 @@ class AddAuthor(RedisManager):
         return await self.set_data(id_user, data)
 
     async def end(self, id_user) -> bool:
-        data = await self.get_data(id_user)
-        print(data)
         async with AsyncSession(engine) as session:
+            data = await self.get_data(id_user)
             session.add(Author(
                 name=data['name'],
                 description=data['description'],
@@ -44,8 +43,6 @@ async def find_author(id_author):
         except Exception as error:
             print(f'поиск автора ошибка:{error},юзер:{id_author}')
             return False
-    if author is None:
-        print('author is not exist')
     return author
 
 

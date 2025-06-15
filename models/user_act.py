@@ -45,10 +45,7 @@ async def admin_user(id_user, admin_bool: bool):
     if user is None:
         return False
     async with AsyncSession(engine) as session:
-        if user:
-            user.admin = admin_bool
-        else:
-            return False
+        user.admin = admin_bool
         await session.commit()
     return True
 

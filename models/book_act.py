@@ -1,3 +1,4 @@
+from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from models.author_act import find_author
@@ -45,4 +46,4 @@ class BookAdd(RedisManager):
 
 async def find_book(query):
     async with (AsyncSession(engine) as session):
-        await session.execute(select())
+        await session.execute(select(Book))

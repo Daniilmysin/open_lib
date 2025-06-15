@@ -88,7 +88,6 @@ async def ins_book_files_epub(message: Message, state: FSMContext):
     book = await RedisManager().get_data(message.from_user.id)  # получаем книгу
     save_folder = os.path.join(folder, 'books')
     name = str(await transliterate(book['name'])) + '_' + str(secrets.token_hex(16))  # создание имени файла с токеном
-
     document = message.document                                    # получаем документ
     file_info = await message.bot.get_file(document.file_id)
     print(str(os.path.splitext(document.file_name)[1]))

@@ -6,6 +6,7 @@ from aiogram import Bot, Dispatcher
 from dotenv import load_dotenv
 from Handlers.debug import info
 from Handlers.user import add_book, add_author, other
+from Handlers.Admin import mailing
 from models import db_act
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -33,7 +34,7 @@ async def main():
         exit()
 
     dp = Dispatcher()
-    dp.include_routers(add_book.rt, other.rt, info.rt, add_author.rt)
+    dp.include_routers(mailing.rt, add_book.rt, other.rt, info.rt, add_author.rt)
     await dp.start_polling(bot)  # запускаем
 
 

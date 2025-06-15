@@ -1,7 +1,9 @@
-from aiogram import Router, Bot
+from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message
 from aiogram.enums import ParseMode
+
+from models import find_user
 
 rt = Router()
 
@@ -13,3 +15,5 @@ async def debug_info(message: Message):
         + f"Username - <code>{message.from_user.username}</code>",
         parse_mode=ParseMode.HTML
     )
+    user = await find_user(message.from_user.id)
+    await message.answer(f'username:{user.name}, admin:{user.admin}, ban:{user.ban}')

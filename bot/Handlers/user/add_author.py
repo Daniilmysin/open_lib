@@ -65,6 +65,6 @@ async def add_photo(message: Message, state: FSMContext):
         await message.answer('ошибка, попробуйте позже')
         return None
     await AddAuthor().add_data(message.from_user.id, name_photo, 'photo' )
-    await AddAuthor().end(message.from_user.id)
-    await message.reply("Фото успешно загружено и сохранено!")
+    result=await AddAuthor().end(message.from_user.id)
+    await message.reply("Автор успешно загружен и сохранене! Его ID=(с к о р о)")
     await state.set_state(AddAuthorState.end)

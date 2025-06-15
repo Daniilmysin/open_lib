@@ -1,3 +1,5 @@
+import logging
+
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -25,10 +27,11 @@ class AddAuthor(RedisManager):
                 photo=data['photo'],
                 creator=id_user
             ))
+            await session.flush()
             try:
                 await session.commit()
             except Exception as error:
-                print(error)
+                logging.error(error)
                 return False
         await self.del_data(id_user)
         return True
@@ -41,7 +44,7 @@ async def find_author(id_author):
         try:
             await session.commit()
         except Exception as error:
-            print(f'поиск автора ошибка:{error},юзер:{id_author}')
+            logging.error(f'поиск автора ошибка:{error},юзер:{id_author}')
             return False
     return author
 

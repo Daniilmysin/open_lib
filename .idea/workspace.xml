@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="eee">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/find_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/find_book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/other.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/other.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/author_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/author_act.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/book_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/book_act.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/db_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/db_act.py" afterDir="false" />
-    </list>
+    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="eee" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -529,7 +522,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749729690788</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="eee">
+      <option name="closed" value="true" />
+      <created>1749919762221</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1749919762221</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

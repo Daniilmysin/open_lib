@@ -51,3 +51,11 @@ async def admin_user(id_user, admin_bool: bool):
             return False
         await session.commit()
     return True
+
+
+async def all_user():
+    async with (AsyncSession(engine) as session):
+        result_user = await session.execute(select(User))
+        await session.commit()
+    return result_user
+

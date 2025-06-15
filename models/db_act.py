@@ -52,7 +52,7 @@ class User(Base):
     ban = Column(Boolean, default=False)
 
 
-# класс работы с менеджером
+# класс работы с redis
 class RedisManager:
     def __init__(self):
         self.redis = aioredis.Redis()

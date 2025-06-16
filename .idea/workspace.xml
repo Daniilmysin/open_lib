@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="smth ырше">
-      <change afterPath="$PROJECT_DIR$/bot/Handlers/Admin/filter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot/Handlers/Admin/mailing.py" afterDir="false" />
+    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="broke all">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BookLib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BookLib.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/Handlers/debug/info.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/debug/info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/add_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/add_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/Handlers/Admin/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/Handlers/Admin/mailing.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/Admin/mailing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/find_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/find_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/other.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/other.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/book_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/book_act.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/db_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/db_act.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/user_act.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -580,7 +581,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749994272979</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="broke all">
+      <option name="closed" value="true" />
+      <created>1749997733407</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1749997733407</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1" />
     <MESSAGE value="убрал класс добавления книги" />
     <MESSAGE value="добавил класс обратно..." />
     <MESSAGE value="добавлен поиск" />
@@ -623,7 +631,8 @@
     <MESSAGE value="smth" />
     <MESSAGE value="logging and smth else" />
     <MESSAGE value="smth ырше" />
-    <option name="LAST_COMMIT_MESSAGE" value="smth ырше" />
+    <MESSAGE value="broke all" />
+    <option name="LAST_COMMIT_MESSAGE" value="broke all" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -632,6 +641,11 @@
           <url>file://$PROJECT_DIR$/bot/Handlers/user/add_author.py</url>
           <line>67</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bot/Handlers/user/other.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

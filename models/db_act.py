@@ -1,11 +1,12 @@
 import orjson
 import os
+
+from typing import List
 import redis.asyncio as aioredis
 from dotenv import load_dotenv
-from sqlalchemy import Integer, String, \
-    Column, ForeignKey, Text, Boolean
+from sqlalchemy import Integer, ForeignKey
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncAttrs
-from sqlalchemy.orm import DeclarativeBase, relationship
+from sqlalchemy.orm import DeclarativeBase, relationship, Mapped,mapped_column
 
 load_dotenv()
 user = str(os.getenv("user"))
@@ -20,36 +21,34 @@ class Base(AsyncAttrs, DeclarativeBase):
 
 class Book(Base):
     __tablename__ = 'book'
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String(150))
-    author_id = Column(Integer, ForeignKey('author.id'))  # ссылка на автора
-    description = Column(Text)
-    creator = Column(Integer, ForeignKey('user.id'))  # ссылка на того что добавил книгу
-    check = Column(Boolean, default=False)
-    file = Column(String(150))
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    name: Mapped[str]
+    author_id: Mapped[int] = mapped_column(ForeignKey('author.id'))  # ссылка на автора
+    description: Mapped[str]
+    creator: Mapped[int] = mapped_column(Integer, ForeignKey('user.id'))  # ссылка на того что добавил книгу
+    check: Mapped[bool] = mapped_column(default=False)
+    file: Mapped[str]
 
 
 class Author(Base):
     __tablename__ = 'author'
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String(100))
-    creator = Column(Integer, ForeignKey("user.id"))
-    description = Column(Text)
-    photo = Column(String(100))
-    check = Column(Boolean, default=False)
-    books = relationship("Book")
-    url = Column(String(300))
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    name: Mapped[str]
+    creator: Mapped[int] = mapped_column(ForeignKey("user.id"))
+    description: Mapped[str]
+    photo: Mapped[str]
+    check: Mapped[bool] = mapped_column(default=False)
+    books: Mapped[List[Book]] = relationship()
 
 
 class User(Base):
     __tablename__ = 'user'
-    id = Column(Integer, primary_key=True)
-    name = Column(String(100))
-    books = relationship("Book")
-    authors = relationship("Author")
-    status = Column(Integer)
-    admin = Column(Boolean, default=False)
-    ban = Column(Boolean, default=False)
+    id: Mapped[int] = mapped_column(primary_key=True)
+    name: Mapped[str]
+    books: Mapped[List[Book]] = relationship()
+    authors : Mapped[List[Author]] = relationship()
+    admin: Mapped[bool] = mapped_column(default=False)
+    ban: Mapped[bool] = mapped_column(default=False)
 
 
 # класс работы с redis

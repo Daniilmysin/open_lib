@@ -12,7 +12,7 @@ async def find_user(id_user):
         except Exception as error:
             print(f'найти юзера ошибка: {error} ,юзер: {id_user} ')
             return False
-        await session.commit()
+        await session.flush()
     return result
 
 
@@ -53,6 +53,7 @@ async def admin_user(id_user, admin_bool: bool):
 async def all_user():
     async with (AsyncSession(engine) as session):
         result_user = await session.execute(select(User))
-        await session.commit()
-    return result_user
+        result_user = result_user.scalars().all()
+        await session.flush()
+    return [user.id for user in result_user]
 

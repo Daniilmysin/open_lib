@@ -4,9 +4,6 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import Message
 
-from models import BookAdd
-from models import RedisManager
-
 
 rt = Router()
 

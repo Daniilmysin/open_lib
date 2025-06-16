@@ -34,7 +34,7 @@ async def main():
         exit()
 
     dp = Dispatcher()
-    dp.include_routers(mailing.rt, add_book.rt, other.rt, info.rt, add_author.rt)
+    dp.include_routers( other.rt, add_book.rt, info.rt, add_author.rt,mailing.rt)
     await dp.start_polling(bot)  # запускаем
 
 

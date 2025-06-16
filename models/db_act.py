@@ -4,8 +4,9 @@ import os
 from typing import List
 import redis.asyncio as aioredis
 from dotenv import load_dotenv
-from sqlalchemy import Integer, ForeignKey
+from sqlalchemy import Integer, ForeignKey, Column, BigInteger
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncAttrs
+from sqlalchemy.dialects.postgresql import INT8RANGE
 from sqlalchemy.orm import DeclarativeBase, relationship, Mapped,mapped_column
 
 load_dotenv()
@@ -43,7 +44,7 @@ class Author(Base):
 
 class User(Base):
     __tablename__ = 'user'
-    id: Mapped[int] = mapped_column(primary_key=True)
+    id: Mapped[int]= mapped_column(BigInteger, primary_key=True)
     name: Mapped[str]
     books: Mapped[List[Book]] = relationship()
     authors : Mapped[List[Author]] = relationship()
@@ -96,6 +97,6 @@ async def del_db():
         await conn.run_sync(Base.metadata.drop_all)
 
 
-async def make_bd():
+async def make_db():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)

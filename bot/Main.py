@@ -28,9 +28,9 @@ async def main():
         exit(logging.error(error_message))
 
     try:
-        await db_act.make_bd()
+        await db_act.make_db()
     except Exception as error_message:
-        logging.debug(f"create database erorr: {error_message}")
+        logging.error(f"create database erorr: {error_message}")
         exit()
 
     dp = Dispatcher()

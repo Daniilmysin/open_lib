@@ -42,7 +42,7 @@ async def find_author(id_author):
         result_author = await session.execute(select(Author).filter_by(id=id_author))
         author = result_author.scalar_one_or_none()
         try:
-            await session.commit()
+            await session.flush()
         except Exception as error:
             logging.error(f'поиск автора ошибка:{error},юзер:{id_author}')
             return False

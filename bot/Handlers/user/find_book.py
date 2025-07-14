@@ -21,8 +21,10 @@ async def book_writer(book) ->str :
 
 @rt.message(F.text)
 async def find_book_handler(message:Message):
-    book = await find_book(message.text)
+    """хэндлер который по любому тексту ищет книгу"""
+    book = await find_book(message.text, id_search=False)
     if book:
-        exit()
-
+        await message.answer(await book_writer(book),parse_mode=ParseMode.HTML)
+    elif book is None:
+        await message.answer('Книга не найдена')
     return

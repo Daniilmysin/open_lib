@@ -6,7 +6,6 @@ import redis.asyncio as aioredis
 from dotenv import load_dotenv
 from sqlalchemy import Integer, ForeignKey, BigInteger, JSON
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncAttrs
-from sqlalchemy.dialects.postgresql import INT8RANGE
 from sqlalchemy.orm import DeclarativeBase, relationship, Mapped,mapped_column
 
 load_dotenv()

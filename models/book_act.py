@@ -33,7 +33,8 @@ class BookAdd(RedisManager):
                 description=data["description"],
                 author_id=data['author'],
                 creator=id_user,
-                epub=data['epub'],
+                formats=data['formats'],
+                file=data['file']
             ))
             try:
                 await session.commit()

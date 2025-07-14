@@ -29,6 +29,7 @@ class Book(Base):
     creator: Mapped[int] = mapped_column(Integer, ForeignKey('user.id'))  # ссылка на того что добавил книгу
     check: Mapped[bool] = mapped_column(default=False)
     file: Mapped[str]
+    formats: Mapped[list] = mapped_column(JSON)
 
 
 class Author(Base):

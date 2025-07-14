@@ -47,8 +47,12 @@ class BookAdd(RedisManager):
 
 async def find_book(query, id_search=True):
     async with (AsyncSession(engine) as session):
-        if id_search is True:
+        if id_search is True: # поиск по ади
             result = await session.execute(select(Book).filter_by(id=query))
-            book = result.scalar_one_or_none()
             await session.flush()
-            return book
+            return result.scalar_one_or_none()
+
+        elif id_search is False: #поиск по имени итд
+            result = await session.execute(select(Book).filter_by(name=query))
+            await session.flush()
+            return result.scalars().first()

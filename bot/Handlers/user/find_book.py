@@ -14,6 +14,11 @@ rt = Router()
 class FindBookState(StatesGroup):
     None
 
+async def book_writer(book) ->str :
+    author = await find_author(book.author)
+    book_str = f'/book {book.id}\n<b>{book.name}</b> \n Автор: {author.name} '
+    return book_str
+
 @rt.message(F.text)
 async def find_book_handler(message:Message):
     book = await find_book(message.text)

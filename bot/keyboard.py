@@ -18,6 +18,10 @@ def get_keyboard_save_book():
             types.InlineKeyboardButton(text="Cохранить", callback_data="save_book"),
             types.InlineKeyboardButton(text="Изменить", callback_data="change_book"),
             types.InlineKeyboardButton(text="Заново", callback_data="add_book")
+        ],
+        [
+            types.InlineKeyboardButton(text="Удалить", callback_data="stop"),
+            types.InlineKeyboardButton(text="Добавить файл", callback_data="add_file")
         ]
     ]
     keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons)

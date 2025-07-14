@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="repair and broke all again">
+    <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="some shit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/find_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/find_book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/other.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/other.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/add_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/add_book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/book_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/book_act.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/db_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/db_act.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,70 +262,6 @@
       <workItem from="1715277976456" duration="7122000" />
       <workItem from="1715336414331" duration="2203000" />
       <workItem from="1715788401753" duration="5599000" />
-    </task>
-    <task id="LOCAL-00001" summary="1">
-      <option name="closed" value="true" />
-      <created>1715259788526</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1715259788526</updated>
-    </task>
-    <task id="LOCAL-00002" summary="1">
-      <option name="closed" value="true" />
-      <created>1715293965112</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1715293965112</updated>
-    </task>
-    <task id="LOCAL-00003" summary="убрал класс добавления книги">
-      <option name="closed" value="true" />
-      <created>1717849831017</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1717849831017</updated>
-    </task>
-    <task id="LOCAL-00004" summary="добавил класс обратно...">
-      <option name="closed" value="true" />
-      <created>1717929307634</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1717929307634</updated>
-    </task>
-    <task id="LOCAL-00005" summary="добавлен поиск">
-      <option name="closed" value="true" />
-      <created>1717936752051</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1717936752051</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Правки">
-      <option name="closed" value="true" />
-      <created>1718016264330</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1718016264330</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Повышена читабельность и красота...">
-      <option name="closed" value="true" />
-      <created>1718027537406</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1718027537406</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Обновлён вариант получения токена">
-      <option name="closed" value="true" />
-      <created>1718027609490</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1718027609490</updated>
     </task>
     <task id="LOCAL-00009" summary="Обновлён вариант получения токена, переименованы классы">
       <option name="closed" value="true" />
@@ -593,7 +527,135 @@
       <option name="project" value="LOCAL" />
       <updated>1750067791051</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="some shit">
+      <option name="closed" value="true" />
+      <created>1750077078439</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1750077078439</updated>
+    </task>
+    <task id="LOCAL-00043" summary="edit keyboard">
+      <option name="closed" value="true" />
+      <created>1752515839284</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1752515839284</updated>
+    </task>
+    <task id="LOCAL-00044" summary="add formats in class Book">
+      <option name="closed" value="true" />
+      <created>1752515868344</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1752515868344</updated>
+    </task>
+    <task id="LOCAL-00045" summary="huynya">
+      <option name="closed" value="true" />
+      <created>1752515892636</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1752515892636</updated>
+    </task>
+    <task id="LOCAL-00046" summary="edit imports">
+      <option name="closed" value="true" />
+      <created>1752515927526</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1752515927526</updated>
+    </task>
+    <task id="LOCAL-00047" summary="edit db commit">
+      <option name="closed" value="true" />
+      <created>1752515994069</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1752515994069</updated>
+    </task>
+    <task id="LOCAL-00048" summary="add book search func">
+      <option name="closed" value="true" />
+      <created>1752516033594</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1752516033594</updated>
+    </task>
+    <task id="LOCAL-00049" summary="add book search func">
+      <option name="closed" value="true" />
+      <created>1752516041261</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1752516041261</updated>
+    </task>
+    <task id="LOCAL-00050" summary="add book search func">
+      <option name="closed" value="true" />
+      <created>1752516046511</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1752516046511</updated>
+    </task>
+    <task id="LOCAL-00051" summary="edit imports">
+      <option name="closed" value="true" />
+      <created>1752516070780</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1752516070780</updated>
+    </task>
+    <task id="LOCAL-00052" summary="edit imports">
+      <option name="closed" value="true" />
+      <created>1752516077743</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1752516077743</updated>
+    </task>
+    <task id="LOCAL-00053" summary="add func for book">
+      <option name="closed" value="true" />
+      <created>1752516121649</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1752516121649</updated>
+    </task>
+    <task id="LOCAL-00054" summary="add handler for search book">
+      <option name="closed" value="true" />
+      <created>1752516164918</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1752516164918</updated>
+    </task>
+    <task id="LOCAL-00055" summary="add handler for search book">
+      <option name="closed" value="true" />
+      <created>1752516170629</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1752516170629</updated>
+    </task>
+    <task id="LOCAL-00056" summary="add handler for search book">
+      <option name="closed" value="true" />
+      <created>1752516279224</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1752516279224</updated>
+    </task>
+    <task id="LOCAL-00057" summary="bruh">
+      <option name="closed" value="true" />
+      <created>1752516961036</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1752516961036</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,15 +673,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавил класс обратно..." />
-    <MESSAGE value="добавлен поиск" />
-    <MESSAGE value="Правки" />
-    <MESSAGE value="Повышена читабельность и красота..." />
-    <MESSAGE value="Обновлён вариант получения токена" />
-    <MESSAGE value="Обновлён вариант получения токена, переименованы классы" />
-    <MESSAGE value="Обновлён вариант получения токена из env" />
-    <MESSAGE value="upload" />
-    <MESSAGE value="upload redis" />
     <MESSAGE value="upload redis and SQL" />
     <MESSAGE value="добавил модели и повысил читабельность кода" />
     <MESSAGE value="fix bugs" />
@@ -627,7 +680,6 @@
     <MESSAGE value="someshit" />
     <MESSAGE value="start script is work!" />
     <MESSAGE value="fixed some shit" />
-    <MESSAGE value="bruh" />
     <MESSAGE value="photo bruh" />
     <MESSAGE value="eee" />
     <MESSAGE value="add new functions" />
@@ -636,15 +688,30 @@
     <MESSAGE value="smth ырше" />
     <MESSAGE value="broke all" />
     <MESSAGE value="repair and broke all again" />
-    <option name="LAST_COMMIT_MESSAGE" value="repair and broke all again" />
+    <MESSAGE value="some shit" />
+    <MESSAGE value="edit keyboard" />
+    <MESSAGE value="add formats in class Book" />
+    <MESSAGE value="huynya" />
+    <MESSAGE value="edit db commit" />
+    <MESSAGE value="add book search func" />
+    <MESSAGE value="edit imports" />
+    <MESSAGE value="add func for book" />
+    <MESSAGE value="add handler for search book" />
+    <MESSAGE value="bruh" />
+    <option name="LAST_COMMIT_MESSAGE" value="bruh" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/bot/Handlers/user/add_author.py</url>
           <line>67</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bot/Handlers/user/add_book.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -659,6 +726,9 @@
       <configuration name="PythonConfigurationType">
         <watch expression="message.date" />
       </configuration>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/models/book_act.py" line="27">
+        <watch expression="data" language="Python" />
+      </inline-watch>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

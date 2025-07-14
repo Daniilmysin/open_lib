@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from Handlers.debug import info
 from Handlers.user import add_book, add_author, other
 from Handlers.Admin import mailing
+from Handlers.user import find_book
 from models import db_act
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -34,7 +35,7 @@ async def main():
         exit()
 
     dp = Dispatcher()
-    dp.include_routers( other.rt, add_book.rt, info.rt, add_author.rt,mailing.rt)
+    dp.include_routers(add_book.rt, info.rt, add_author.rt,mailing.rt,other.rt,find_book.rt)
     await dp.start_polling(bot)  # запускаем
 
 

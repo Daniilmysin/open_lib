@@ -20,7 +20,7 @@ async def start_mailing(message:Message, state: FSMContext):
     await message.answer("Отправьте сообщение для рассылки или нажмите /stop для отмены")
     await state.set_state(StateMailing.getmail)
 
-@rt.message(Command('mailing'))
+@rt.message(Command(''))
 async def stop_mailing(message:Message, state: FSMContext):
     await message.answer("Отмена")
     await state.clear()

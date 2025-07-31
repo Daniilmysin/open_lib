@@ -22,6 +22,7 @@ class AddAuthorState(StatesGroup):
 
 @rt.callback_query(F.data == 'add_author')
 async def start_add(callback: types.CallbackQuery, state: FSMContext):
+    await state.clear()
     await callback.message.answer('Напишите имя автора:')
     await state.set_state(AddAuthorState.add_name)
 
@@ -65,6 +66,6 @@ async def add_photo(message: Message, state: FSMContext):
         await message.answer('ошибка, попробуйте позже')
         return None
     await AddAuthor().add_data(message.from_user.id, name_photo, 'photo' )
-    result=await AddAuthor().end(message.from_user.id)
-    await message.reply("Автор успешно загружен и сохранене! Его ID=(с к о р о)")
+    result = await AddAuthor().end(message.from_user.id)
+    await message.reply(f"Автор успешно загружен и сохранене! Его ID={result}")
     await state.set_state(AddAuthorState.end)

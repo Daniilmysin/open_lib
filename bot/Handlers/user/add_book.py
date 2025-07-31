@@ -37,7 +37,6 @@ async def ins_book(callback: types.CallbackQuery, state: FSMContext):
 async def ins_book_author(message: Message, state: FSMContext):
     """Принимает айди автора"""
     mes = int(message.text)
-    print(mes)
     status = await BookAdd().author_id(mes, message.from_user.id)
     if status is True:
         await message.answer("Добавлено. Введите название книги:")
@@ -54,7 +53,6 @@ async def ins_book_author(message: Message, state: FSMContext):
 async def ins_book_name(message: Message, state: FSMContext):
     """Принимает название книги"""
     mes = str(message.text)
-    print(mes)
     status = await BookAdd().add_data(id_user=message.from_user.id, add_data=mes, key='name')
     """Если всё нормально то всё True"""
     if status is True:
@@ -81,7 +79,7 @@ async def ins_book_name(message: Message, state: FSMContext):
 
 
 @rt.message(F.document, AddingBook.get_adder_files)
-async def ins_book_files_epub(message: Message, state: FSMContext):
+async def ins_book_files(message: Message, state: FSMContext):
     """принимает файл с книгой"""
 
     book = await RedisManager().get_data(message.from_user.id)  # получаем книгу
@@ -90,39 +88,40 @@ async def ins_book_files_epub(message: Message, state: FSMContext):
     document = message.document          # получаем документ
     file_info = await message.bot.get_file(document.file_id)
     book_format = str(os.path.splitext(document.file_name)[1])
-    formats = book.get('formats')
+    formats = book.get('formats') or []
 
     if book_format not in allowed_formats:
         await message.reply("Файл не подходит, отправьте другой")
         await state.set_state(AddingBook.get_adder_files)
-    elif formats:
-        if book_format in formats:
-            await message.answer('Этот формат уже есть, отправьте другой')
-            await state.set_state(AddingBook.get_adder_files)
+        return
+
+    if book_format in formats:
+        await message.answer('Этот формат уже есть, отправьте другой')
+        await state.set_state(AddingBook.get_adder_files)
+        return
+
+    formats.append(book_format)
+
+    if book.get('file'):
+        name = book['file']
     else:
-        if book.get('file'):
-            name = book['file']
-        else:
-            name = str(await transliterate(book['name'])) + '_' + str(secrets.token_hex(16))  # создание имени файла с токеном
-        new_file_name = name + book_format
-        downloaded_file = await message.bot.download_file(file_info.file_path)  # скачиваем
-        destination = os.path.join(save_folder, new_file_name)
+        name = str(await transliterate(book['name'])) + '_' + str(secrets.token_hex(16))  # создание имени файла с токеном
 
-        try:
-            with open(destination, 'wb') as f:  # сохраняем
-                f.write(downloaded_file.read())
-        except Exception as Error:
-            print(f'Ошибка открытия файла:{Error}')
-            await message.reply("Ошибка открытия и сохранения файла, возможно файл побит")
+    new_file_name = name + book_format
+    downloaded_file = await message.bot.download_file(file_info.file_path)  # скачиваем
+    destination = os.path.join(save_folder, new_file_name)
 
-        await BookAdd().add_data(message.from_user.id, formats, 'formats')
-        await BookAdd().add_data(message.from_user.id, name, 'file')
+    try:
+        with open(destination, 'wb') as f:  # сохраняем
+            f.write(downloaded_file.read())
+    except Exception as Error:
+        print(f'Ошибка открытия файла:{Error}')
+        await message.reply("Ошибка открытия и сохранения файла, возможно файл побит")
 
-        await message.reply("Файл сохранен")
-        await message.answer('Книга будет выглядеть так: \n' + book['name'] + '\nОписание: \n' + book['description'],
-                             reply_markup=get_keyboard_save_book())
-
-        await state.set_state(AddingBook.end)
+    await BookAdd().add_data(message.from_user.id, formats, 'formats')
+    await BookAdd().add_data(message.from_user.id, name, 'file')
+    await message.reply("Файл сохранен")
+    await state.set_state(AddingBook.end)
 
 
 @rt.callback_query(F.data == 'save_book', AddingBook.end)
@@ -140,7 +139,7 @@ async def end(callback: types.CallbackQuery, state: FSMContext):
 @rt.callback_query(F.data =="add_file")
 async def stop(callback: types.CallbackQuery , state: FSMContext):
     """Заканчивает создание книги"""
-    await callback.message.answer("Отправьте файл()")
+    await callback.message.answer("Отправьте файл")
     await state.set_state(AddingBook.get_adder_files)
 
 

@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="65e40264-6cf3-41db-87ee-749694eaba73" name="Changes" comment="some shit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/Handlers/Admin/mailing.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/Admin/mailing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/Handlers/user/add_author.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/add_author.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot/Handlers/user/add_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Handlers/user/add_book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/author_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/author_act.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,14 +264,6 @@
       <workItem from="1715277976456" duration="7122000" />
       <workItem from="1715336414331" duration="2203000" />
       <workItem from="1715788401753" duration="5599000" />
-    </task>
-    <task id="LOCAL-00009" summary="Обновлён вариант получения токена, переименованы классы">
-      <option name="closed" value="true" />
-      <created>1718027721566</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1718027721566</updated>
     </task>
     <task id="LOCAL-00010" summary="Обновлён вариант получения токена из env">
       <option name="closed" value="true" />
@@ -655,7 +649,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752516961036</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="some shit">
+      <option name="closed" value="true" />
+      <created>1752519460878</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1752519460878</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,7 +690,6 @@
     <MESSAGE value="smth ырше" />
     <MESSAGE value="broke all" />
     <MESSAGE value="repair and broke all again" />
-    <MESSAGE value="some shit" />
     <MESSAGE value="edit keyboard" />
     <MESSAGE value="add formats in class Book" />
     <MESSAGE value="huynya" />
@@ -698,22 +699,11 @@
     <MESSAGE value="add func for book" />
     <MESSAGE value="add handler for search book" />
     <MESSAGE value="bruh" />
-    <option name="LAST_COMMIT_MESSAGE" value="bruh" />
+    <MESSAGE value="some shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="some shit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/bot/Handlers/user/add_author.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/bot/Handlers/user/add_book.py</url>
-          <line>94</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
